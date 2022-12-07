@@ -1,0 +1,72 @@
+.lotus {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    position: relative;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+.lotus div {
+    width: 120px;
+    height: 120px;
+    border: 1px solid gray;
+    border-radius: 0 50% 50% 50%; 
+    position: absolute;
+    left: 12px;
+    top: 60px;
+    transform-origin: 90px 90px;
+    transform: rotate(45deg);
+    opacity: 50%;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+}
+
+.lotus div:nth-child(1) {
+    background-color: hsla(40, 80%, 60%, .7);
+    animation-name: petal-1;
+}
+
+.lotus div:nth-child(2) {
+    background-color: hsla(112, 80%, 60%, .7);
+    animation-name: petal-2;
+}
+
+.lotus div:nth-child(3) {
+    background-color: hsla(184, 80%, 60%, .7);
+    animation-name: petal-3;
+}
+
+.lotus div:nth-child(4) {
+    background-color: hsla(256, 80%, 60%, .7);
+    animation-name: petal-4;
+}
+
+.lotus div:nth-child(5) {
+    background-color: hsla(330, 80%, 60%, .7);
+    animation-name: petal-5;
+}
+@keyframes petal-1 {
+    0% {transform: rotate(45deg)}
+    100% {transform: rotate(-45deg)}
+}
+
+@keyframes petal-2 {
+    0% {transform: rotate(45deg)}
+    100% {transform: rotate(0deg)}
+}
+
+@keyframes petal-3 {
+    0% {transform: rotate(45deg)}
+    100% {transform: rotate(45deg)}
+}
+
+@keyframes petal-4 {
+    0% {transform: rotate(45deg)}
+    100% {transform: rotate(90deg)}
+}
+
+@keyframes petal-5 {
+    0% {transform: rotate(45deg)}
+    100% {transform: rotate(135deg)}
+}
